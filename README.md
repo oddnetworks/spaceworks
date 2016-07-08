@@ -6,6 +6,8 @@ You will need a server running with at least V2 of [Oddworks](https://github.com
 
 We suggest using this to get started: [example-single-process](https://github.com/oddnetworks/example-single-process)
 
+_Note:_ if you use a different server, or modify the views, you'll need to update the relationship names in `MainActivity`.
+
 Once you have your server running, you'll need to update the `accessToken` which is located in `app/src/main/AndroidManifest.xml'
 
          <application
