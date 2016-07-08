@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/loadingLayout"
+        tools:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."/>
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/dataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="visible"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/promotionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:id="@+id/promotionImage"
+                android:layout_width="128dp"
+                android:layout_height="72dp"
+                tools:src="@android:color/black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/standard_padding"/>
+            <TextView
+                android:id="@+id/promotionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/promotionLabel"
+                android:layout_toEndOf="@id/promotionImage"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/promotionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="A Promotion"
+                android:layout_marginStart="@dimen/standard_padding"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/promotionLabel"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/featuredMediaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/promotionLayout"
+            android:layout_marginTop="@dimen/standard_padding">
+            <ImageView
+                android:id="@+id/featuredMediaImage"
+                android:layout_width="128dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/standard_padding"
+                tools:src="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/featuredMediaLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/featuredMediaLabel"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/featuredMediaImage"/>
+            <TextView
+                android:id="@+id/featuredMediaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Space Odyssey"
+                android:layout_marginStart="@dimen/standard_padding"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/featuredMediaLabel"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/featuredCollectionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/featuredMediaLayout"
+            android:layout_marginTop="@dimen/standard_padding">
+            <ImageView
+                android:id="@+id/featuredCollectionsImage"
+                android:layout_width="128dp"
+                android:layout_height="72dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/standard_padding"
+                tools:src="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/featuredCollectionsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/featuredCollectionsLabel"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/featuredCollectionsImage"/>
+            <TextView
+                android:id="@+id/featuredCollectionsSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="7"
+                android:layout_marginStart="@dimen/standard_padding"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/featuredCollectionsLabel"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
