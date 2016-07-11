@@ -21,7 +21,7 @@
 
         <meta-data
             android:name="io.oddworks.accessToken"
-            android:value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoxLCJjaGFubmVsIjoibmFzYSIsInBsYXRmb3JtIjoiYXBwbGUtaW9zIiwic2NvcGUiOlsicGxhdGZvcm0iXSwiaWF0IjoxNDY3OTA0NzE0fQ.P2s04Zz_vNvTfF1UxFV8NuRLYabQ3G4gKmwUp2d1ht0"/>
+            android:value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2ZXJzaW9uIjoxLCJjaGFubmVsIjoibmFzYSIsInBsYXRmb3JtIjoiYXBwbGUtaW9zIiwic2NvcGUiOlsicGxhdGZvcm0iXSwiaWF0IjoxNDY4MjQ3MTQwfQ.CR-pymZivynuEaLPK5GIs8fYqFILiY8SDTxa7j4V1Lo"/>
     </application>
 
 </manifest>

@@ -25,6 +25,6 @@ public class Spaceworks extends Application {
         RestServiceProvider.init(this);
 
         ApiCaller apiCaller = RestServiceProvider.getInstance().getApiCaller();
-        apiCaller.setBaseUrl("http://192.168.12.111:3000/");
+        apiCaller.setBaseUrl("http://odd-gdgnyc.herokuapp.com/");
     }
 }
